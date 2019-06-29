@@ -2,9 +2,11 @@ import React from "react";
 import SectionWelcomeStyled from "./styles/SectionWelcomeStyled";
 import SeparatorStyled from "./styles/SeparatorStyled";
 import SubtitleStyled from "./styles/SubtitleStyled";
+import ButtonsContainerStyled from "./styles/ButtonsContainerStyled";
 import Title from "../../components/Title/Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faReact, faGithub } from "@fortawesome/free-brands-svg-icons";
+import Button from "../../components/Button/Button";
 
 const SectionWelcome = () => (
   <SectionWelcomeStyled>
@@ -16,6 +18,20 @@ const SectionWelcome = () => (
       The React Dev Directory is a comprehensive list of blogs & sites covering
       React development.
     </SubtitleStyled>
+    <ButtonsContainerStyled>
+      <Button
+        variant="secondary"
+        onClick={() => console.log("How to contribute clicked")}
+      >
+        <FontAwesomeIcon icon={faGithub} /> How to contribute
+      </Button>
+      <Button
+        variant="secondary"
+        onClick={() => console.log("About button clicked")}
+      >
+        About
+      </Button>
+    </ButtonsContainerStyled>
   </SectionWelcomeStyled>
 );
 
