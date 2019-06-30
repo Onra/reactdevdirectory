@@ -39,7 +39,6 @@ const SectionWelcome = () => (
       </ButtonsContainerStyled>
     </MainWelcomeContainer>
     <SeeMoreStyled>
-      Let's see all the good stuff !
       <ChevronIconStyled icon={faChevronDown} />
     </SeeMoreStyled>
   </SectionWelcomeStyled>
