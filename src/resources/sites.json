@@ -1,0 +1,54 @@
+[
+  {
+    "category_name": "Official",
+    "tags": ["react"],
+    "sites": [
+      {
+        "title": "React Documentation",
+        "site_url": "https://reactjs.org/docs/getting-started.html",
+        "description": "Official React documentation provided by Facebook"
+      },
+      {
+        "title": "React Blog",
+        "site_url": "https://reactjs.org/blog/",
+        "description": "Official React blog provided by Facebook"
+      }
+    ]
+  },
+  {
+    "category_name": "Blogs",
+    "tags": ["blogs"],
+    "sites": [
+      {
+        "title": "Overreacted",
+        "site_url": "https://overreacted.io/",
+        "description": "Dan Abramov's personal blog.",
+        "tags": ["react"]
+      }
+    ]
+  },
+  {
+    "category_name": "Podcasts",
+    "tags": ["podcasts"],
+    "sites": [
+      {
+        "title": "Syntax.",
+        "site_url": "https://syntax.fm/",
+        "description": "A Tasty Treats Podcast for Web Developers.",
+        "tags": ["JavaScript"]
+      }
+    ]
+  },
+  {
+    "category_name": "Conferences",
+    "tags": ["conferences"],
+    "sites": [
+      {
+        "title": "React Europe",
+        "site_url": "https://www.react-europe.org/",
+        "description": "The Original European React Conference.",
+        "tags": ["JavaScript", "React"]
+      }
+    ]
+  }
+]
