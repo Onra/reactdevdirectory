@@ -6,32 +6,42 @@ import ButtonsContainerStyled from "./styles/ButtonsContainerStyled";
 import Title from "../../components/Title/Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Button from "../../components/Button/Button";
+import SeeMoreStyled from "./styles/SeeMoreStyled";
+import MainWelcomeContainer from "./styles/MainWelcomeContainer";
+import ChevronIconStyled from "./styles/ChevronIconStyled";
 
 const SectionWelcome = () => (
   <SectionWelcomeStyled>
-    <Title>
-      <FontAwesomeIcon icon={faReact} /> React Dev Directory
-    </Title>
-    <SeparatorStyled />
-    <SubtitleStyled>
-      The React Dev Directory is a comprehensive list of blogs & sites covering
-      React development.
-    </SubtitleStyled>
-    <ButtonsContainerStyled>
-      <Button
-        variant="secondary"
-        onClick={() => console.log("How to contribute clicked")}
-      >
-        <FontAwesomeIcon icon={faGithub} /> How to contribute
-      </Button>
-      <Button
-        variant="secondary"
-        onClick={() => console.log("About button clicked")}
-      >
-        About
-      </Button>
-    </ButtonsContainerStyled>
+    <MainWelcomeContainer>
+      <Title>
+        <FontAwesomeIcon icon={faReact} /> React Dev Directory
+      </Title>
+      <SeparatorStyled />
+      <SubtitleStyled>
+        The React Dev Directory is a comprehensive list of blogs & sites
+        covering React development.
+      </SubtitleStyled>
+      <ButtonsContainerStyled>
+        <Button
+          variant="secondary"
+          onClick={() => console.log("How to contribute clicked")}
+        >
+          <FontAwesomeIcon icon={faGithub} /> How to contribute
+        </Button>
+        <Button
+          variant="secondary"
+          onClick={() => console.log("About button clicked")}
+        >
+          About
+        </Button>
+      </ButtonsContainerStyled>
+    </MainWelcomeContainer>
+    <SeeMoreStyled>
+      Let's see all the good stuff !
+      <ChevronIconStyled icon={faChevronDown} />
+    </SeeMoreStyled>
   </SectionWelcomeStyled>
 );
 
